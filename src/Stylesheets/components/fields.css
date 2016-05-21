@@ -4,6 +4,7 @@
 .field--border {
   width: 300px;
   height: 55px;
+  outline: none;
   border-style: solid;
   border-width: 1px;
   border-radius: 100px; }
