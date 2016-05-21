@@ -4,11 +4,10 @@
 .field--border {
   width: 300px;
   height: 55px;
-  outline: none;
   border-style: solid;
   border-width: 1px;
   border-radius: 100px; }
-
+  
 .field--fill {
   background-color: #00479F; }
 
@@ -17,4 +16,8 @@
   length: 300px;
   color: #000000; }
 
+*:focus {
+  outline-style: none;
+}
+  
 /*# sourceMappingURL=fields.css.map */
