@@ -11,9 +11,9 @@ const AppBox = React.createClass({
         return(
 			<div>
             <div className='row'>
-				<div className='col-xs-2' />
+				<div className='col-xs-2'/>
 				<div className='col-xs-3'>
-					<div className='Apps__box--cDim Apps__box--outline'>
+					<div className='Apps__box--cDim Apps__box--simpleBorder'>
 						<img src="./Assets/Apps/group-2.png" alt="interop" className='Apps__box__icon--center35x26' />
 					</div>
 				</div>
