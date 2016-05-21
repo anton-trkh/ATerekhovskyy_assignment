@@ -28,7 +28,7 @@ const Apps = React.createClass({
 						</span>
 					</span>
                 </div>
-                <img src="./Assets/Apps/logo.png" alt="logo" className="center-block" />
+                <img src="./Assets/Apps/Logo.png" alt="logo" className="center-block" />
 
 				{smallGap}
 				
