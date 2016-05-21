@@ -26,13 +26,23 @@ const Login1 = React.createClass ({
         if (password != 'makeithappen' || uid != 'jeff@focus21.io'){
             $("#shakeit").effect("shake", {}, 1000);
         }
-        console.log("Present State:" + this.props.store.getState().ActiveScr);
         this.props.store.dispatch(submitID(uid, password, 'L1'))
     },
+	
+	nameCheck(){
+		var uid = document.getElementById('L1__loginID__field').value;
+        var password = document.getElementById('L1__password__field').value;
+        this.props.store.dispatch(submitID(uid, password, 'L1'))
+	},
+	
+	select(){
+		$('#L1__loginID__field').focus();
+	},
+	
     render(){
 		var largeGap = [];
 		var smallGap = [];
-		for (var i = 0; i < 10; i++){
+		for (var i = 0; i < 12; i++){
 			largeGap.push(<Spacer key={i}/>);
 		};
 		for (var i = 0; i < 5; i++){
@@ -40,7 +50,7 @@ const Login1 = React.createClass ({
 		};
 		
         return (
-            <div className="L1" id="Login1" >
+            <div className="L1" id="Login1" onLoad={this.select}>
 			
 				<img src="./Assets/L2/logo.png" alt="logo" className="center-block text-center" style={{width:'250px'}}/>
 
@@ -51,8 +61,10 @@ const Login1 = React.createClass ({
 				
 				<div className="field--blue field--border center-block" id='L1__loginID'>
 					<span>
+						&nbsp;&nbsp;&nbsp;&nbsp;
 						<img src='./Assets/L1/group-2.png' alt='icon' />
-						<input type='text' id='L1__loginID__field' placeholder="EMAIL" className='field__input--dim'></input>
+						&nbsp;
+						<input type='text' id='L1__loginID__field' placeholder="EMAIL" onBlur={this.nameCheck} className='field__input--dim'></input>
 					</span>
 				</div> 
 
@@ -60,7 +72,9 @@ const Login1 = React.createClass ({
 				
 				<div className="field--blue field--border center-block" id='L1__password'>
 					<span>
+						&nbsp;&nbsp;&nbsp;&nbsp;
 						<img src='./Assets/L1/group.png' alt='img' />
+						&nbsp;
 						<input type='password' id='L1__password__field' placeholder="PASSWORD" className='field__input--dim'/>
 					</span>
 				</div>

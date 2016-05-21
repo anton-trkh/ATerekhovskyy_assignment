@@ -26,10 +26,15 @@ const Login2 = React.createClass({
         }
         this.props.store.dispatch(submitID('jeff@focus21.io', password, 'L2'))
     },    
+	
+	select(){
+		$('#L2__password__field').focus();
+	},
+	
     render(){
 		var largeGap = [];
 		var smallGap = [];
-		for (var i = 0; i < 10; i++){
+		for (var i = 0; i < 5; i++){
 			largeGap.push(<Spacer key={i}/>);
 		};
 		for (var i = 0; i < 5; i++){
@@ -37,7 +42,7 @@ const Login2 = React.createClass({
 		};
 		
         return(
-            <div className="L2" >
+            <div className="L2" onLoad={this.select}>
 
 				<img src="./Assets/L2/logo.png" alt="logo" className="center-block text-center" style={{width:'250px'}}/>
 				
@@ -62,7 +67,9 @@ const Login2 = React.createClass({
 
 				<div className="field--blue field--border center-block " id='L2__password'>
 					<span>
+						&nbsp;&nbsp;&nbsp;&nbsp;
 						<img src='./Assets/L1/group-2.png' alt='img' />
+						&nbsp;
 						<input type='password' id='L2__password__field' placeholder="PASSWORD" className='field__input--dim'/>
 					</span>
 				</div>

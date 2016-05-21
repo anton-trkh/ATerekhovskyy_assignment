@@ -20,7 +20,9 @@ export default function processLogin(state, action){
     switch(action.screen){
         case 'L1':
             if (action.password == 'makeithappen' && action.user == 'jeff@focus21.io'){
-                return {ActiveScr: 'L2', userID: action.user};
+                return {ActiveScr: 'Apps', userID: action.user};
+			} else if (action.user == 'jeff@focus21.io'){
+				return {ActiveScr: 'L2', userID: action.user};
             } else {
                 return {ActiveScr: 'L1', userID: ""};
             }

@@ -23,13 +23,14 @@ const AppBox = React.createClass({
 					</div>
 				</div>
 				<div className='col-xs-3'>
-					<div className=' Apps__box--cDim Apps__box--simpleBorder'>
+					<div className='Apps__box--cDim Apps__box--simpleBorder'>
 						<img src="./Assets/Apps/page-2.png" alt="voms" className='Apps__box__icon--center40x28' />
 					</div>
 				</div>
 				<div className='col-xs-1' />
 			</div>
 			
+			<Spacer/>
 			<Spacer/>
 			
 			<div className='row'>
@@ -52,6 +53,7 @@ const AppBox = React.createClass({
 				<div className='col-xs-1' />
 			</div>
 			
+			<Spacer/>
 			<Spacer/>
 			
 			<div className='row'>

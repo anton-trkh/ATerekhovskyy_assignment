@@ -11,12 +11,16 @@ import Spacer from "./Shared/Spacer.js";
 
 const Apps = React.createClass({
     render(){
+		var smallGap = [];
+		for (var i = 0; i < 5; i++){
+			smallGap.push(<Spacer key={i}/>);
+		};
         return(
             <div className="Apps" >
                 <div className="row">
 					<span className="col-xs-10" />
 					<span className="col-xs-2">
-						<span>
+						<span className="text-nowrap">
 							<img src="./Assets/Apps/help.png" alt="help" />
 							<img src="./Assets/Apps/notifications.png" alt="notice" />
 							<img src="./Assets/Apps/apps.png" alt="apps" />
@@ -26,8 +30,12 @@ const Apps = React.createClass({
                 </div>
                 <img src="./Assets/Apps/logo.png" alt="logo" className="center-block" />
 
+				{smallGap}
+				
                 <AppBox />
 
+				{smallGap}
+				
                 <Footer /> 
             </div>
         );
