@@ -57,8 +57,9 @@
   top: 28px; }
 
 .Apps__box__icon--center35x26 {
-  display: flex;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
+  
  }
 
 /*# sourceMappingURL=positions_AppBox.css.map */
