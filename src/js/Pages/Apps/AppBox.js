@@ -12,9 +12,9 @@ const AppBox = React.createClass({
 			<div>
             <div className='row'>
 				<div className='col-xs-2'/>
-				<div className='col-xs-3'>
-					<div className='Apps__box--cDim Apps__box--simpleBorder'>
-						<img src="./Assets/Apps/group-2.png" alt="interop" className='Apps__box__icon--center35x26' />
+				<div className='col-xs-3 text-center'>
+					<div className='Apps__box--cDim Apps__box--simpleBorder text-center'>
+						<img src="./Assets/Apps/group-2.png" alt="interop" className='Apps__box__icon--center35x26 img-responsive center-block img-center' />
 					</div>
 				</div>
 				<div className='col-xs-3'>
