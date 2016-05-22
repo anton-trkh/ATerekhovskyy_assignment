@@ -20,3 +20,9 @@ Application info, and expected behaviour
 Bugs
 *****
 	-> In the apps screen, the app icons are slightly misaligned inside the border
+	
+Notes
+*****
+	->I have been having some issues deploying the website to heroku,
+		I have found a workaround online, to trick heroku into thinking the app is php not nodejs. 
+		I assume this is not standard practice, so I thought I should mention it.
